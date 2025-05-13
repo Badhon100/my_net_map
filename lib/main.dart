@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
     });
     try {
       final response = await Dio().get(
-        'https://api-int.devdata.top/api/Test/GetUserLog',
+        'https://api-int.devdata.top/api/v1/UserLog/GetUserLogInfo',
       );
       setState(() {
         _userData = response.data;
